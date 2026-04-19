@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>D4 Review | Jasa Google Maps Premium</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(rgba(5, 3, 20, 0.82), rgba(2, 1, 12, 0.88)), 
+                  url('https://cdn.phototourl.com/free/2026-04-19-f4e1402b-bf9d-4991-8989-8df89f4ddef0.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #edefff;
+      min-height: 100vh;
+      padding: 0 0 20px 0;
+    }
+
+    .nebula-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 30%, rgba(110, 70, 210, 0.15) 0%, rgba(0, 0, 0, 0) 60%),
+                  radial-gradient(circle at 80% 70%, rgba(70, 40, 170, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: blink 2.5s infinite alternate;
+    }
+    @keyframes blink {
+      0% { opacity: 0.2; transform: scale(0.8);}
+      100% { opacity: 1; transform: scale(1.2);}
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1.2rem 1rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(20, 15, 45, 0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(140, 100, 255, 0.5);
+      border-radius: 60px;
+      padding: 0.3rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #c6bdff;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(125deg, #FFFFFF, #c7b4ff, #9d6eff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.5px;
+    }
+    h1 span {
+      font-size: 1rem;
+      display: block;
+      background: none;
+      -webkit-background-clip: unset;
+      color: #b9b2ff;
+      margin-top: 4px;
+    }
+    .subhead {
+      font-size: 0.8rem;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(4px);
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+    }
+
+    /* PRICE LIST */
+    .price-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.5rem 0 1.8rem;
+    }
+    .price-card {
+      background: rgba(8, 12, 28, 0.7);
+      backdrop-filter: blur(16px);
+      border-radius: 1.5rem;
+      border: 1px solid rgba(110, 80, 220, 0.5);
+      padding: 1.2rem;
+      transition: all 0.2s ease;
+    }
+    .price-card:active {
+      transform: scale(0.99);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+    .price-nominal {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: white;
+    }
+    .price-nominal small {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #bcb3ff;
+    }
+    .package-name {
+      font-weight: 700;
+      background: linear-gradient(120deg, #ddd6ff, #bb9eff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 0.9rem;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.8rem 0;
+    }
+    .benefit-tag {
+      background: rgba(100, 70, 200, 0.25);
+      border-radius: 40px;
+      padding: 0.25rem 0.7rem;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #e0d6ff;
+    }
+    .benefit-tag i {
+      font-size: 0.65rem;
+      color: #a986ff;
+    }
+    .btn-order {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(95deg, #5f3dc9, #3b1e8a);
+      border: none;
+      border-radius: 60px;
+      padding: 0.7rem;
+      width: 100%;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-order:active {
+      transform: scale(0.97);
+    }
+
+    /* MODAL POPUP PILIH KONTAK */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    .modal-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .modal-container {
+      background: linear-gradient(145deg, #11162b, #0a0d1f);
+      border-radius: 2rem;
+      border: 1px solid rgba(155, 110, 255, 0.5);
+      padding: 1.5rem;
+      width: 85%;
+      max-width: 340px;
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+      transform: scale(0.9);
+      transition: transform 0.25s ease;
+    }
+    .modal-overlay.active .modal-container {
+      transform: scale(1);
+    }
+    .modal-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(120deg, #fff, #c5adff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .modal-sub {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #a59ed6;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed rgba(155, 110, 255, 0.3);
+    }
+    .modal-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .modal-wa, .modal-tele {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 0.9rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.2s;
+      cursor: pointer;
+      border: 1px solid;
+    }
+    .modal-wa {
+      background: #075E5415;
+      border-color: #25D366;
+      color: #e0ffef;
+    }
+    .modal-wa:active {
+      background: #25D366;
+      color: #111;
+      transform: scale(0.97);
+    }
+    .modal-tele {
+      background: #1f8bcb15;
+      border-color: #26A5E4;
+      color: #daf5ff;
+    }
+    .modal-tele:active {
+      background: #26A5E4;
+      color: #0a1c2a;
+      transform: scale(0.97);
+    }
+    .modal-close {
+      background: rgba(255,255,255,0.08);
+      border: none;
+      border-radius: 40px;
+      padding: 0.6rem;
+      margin-top: 0.8rem;
+      font-size: 0.75rem;
+      color: #b5adf0;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .modal-close:active {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* TOAST NOTIFICATION - MEMANJANG RECTANGULAR */
+    .toast-notif {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: linear-gradient(135deg, #1a1a2ecc, #0f0f23cc);
+      backdrop-filter: blur(20px);
+      border-left: 4px solid #9f7eff;
+      border-right: 1px solid rgba(155, 110, 255, 0.3);
+      border-top: 1px solid rgba(155, 110, 255, 0.3);
+      border-bottom: 1px solid rgba(155, 110, 255, 0.3);
+      border-radius: 12px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 1100;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(155, 110, 255, 0.2);
+      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      font-weight: 500;
+      font-size: 0.85rem;
+      color: #f0eaff;
+      min-width: 260px;
+      max-width: 90%;
+      width: auto;
+      letter-spacing: 0.2px;
+    }
+    .toast-notif.show {
+      transform: translateX(-50%) translateY(0);
+    }
+    .toast-notif i {
+      font-size: 1.2rem;
+      color: #9f7eff;
+      flex-shrink: 0;
+    }
+    .toast-notif .toast-text {
+      flex: 1;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+    .toast-notif .close-toast {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 8px;
+      width: 26px;
+      height: 26px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 11px;
+      margin-left: 8px;
+      transition: 0.2s;
+      flex-shrink: 0;
+    }
+    .toast-notif .close-toast:hover {
+      background: rgba(255,255,255,0.25);
+    }
+    .toast-notif .close-toast:active {
+      transform: scale(0.95);
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.65rem;
+      color: #6b65a0;
+      margin-top: 1.5rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(100, 80, 170, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 1rem 0.9rem 1.5rem; }
+      h1 { font-size: 1.9rem; }
+      .price-nominal { font-size: 1.6rem; }
+      .toast-notif { padding: 12px 16px; font-size: 0.8rem; min-width: 240px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="nebula-glow"></div>
+<div class="stars" id="starsContainer"></div>
+
+<div class="container">
+  <div class="hero">
+    <div class="badge">
+      <i class="fas fa-star-of-life"></i> GOOGLE MAPS REVIEWS
+    </div>
+    <h1>REVIEW GOOGLE MAPS<br><span>⚡ TRUST RIVIEW ⚡</span></h1>
+    <div class="subhead">
+      <i class="fas fa-check-circle"></i> Bintang 5 • Real Akun • Cepat
+    </div>
+  </div>
+
+  <!-- DAFTAR HARGA -->
+  <div class="price-list">
+    <!-- Paket 1: Rp3.000 -->
+    <div class="price-card">
+      <div class="card-header">
+        <div class="price-nominal">Rp3.000 <small>/ review</small></div>
+        <div class="package-name"><i class="fas fa-gem"></i> Basic</div>
+      </div>
+      <div class="benefits">
+        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
+        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
+        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
+      </div>
+      <button class="btn-order order-btn" data-paket="Basic (Rp3.000)" data-message="Halo%2C%20saya%20pesan%20Paket%20Rp3.000%20(Review%20GMAPS%20Bintang5%2C%20Akun%20Berkualitas)">
+        <i class="fas fa-shopping-cart"></i> Order
+      </button>
+    </div>
+
+    <!-- Paket 2: Rp4.000 -->
+    <div class="price-card">
+      <div class="card-header">
+        <div class="price-nominal">Rp4.000 <small>/ review</small></div>
+        <div class="package-name"><i class="fas fa-star"></i> Pro</div>
+      </div>
+      <div class="benefits">
+        <span class="benefit-tag"><i class="fas fa-comment-dots"></i> ULASAN BERKUALITAS</span>
+        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
+        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
+        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
+      </div>
+      <button class="btn-order order-btn" data-paket="Pro (Rp4.000)" data-message="Saya%20pesan%20paket%20Rp4.000%20(ulasan%20berkualitas%2C%20bintang5%20GMAPS)">
+        <i class="fas fa-shopping-cart"></i> Order
+      </button>
+    </div>
+
+    <!-- Paket 3: Rp7.000 -->
+    <div class="price-card">
+      <div class="card-header">
+        <div class="price-nominal">Rp7.000 <small>/ review</small></div>
+        <div class="package-name"><i class="fas fa-camera-retro"></i> Premium </div>
+      </div>
+      <div class="benefits">
+        <span class="benefit-tag"><i class="fas fa-comment-dots"></i> ULASAN BERKUALITAS</span>
+        <span class="benefit-tag"><i class="fas fa-image"></i> FOTO PADA ULASAN</span>
+        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
+        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
+        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
+      </div>
+      <button class="btn-order order-btn" data-paket="Premium (Rp7.000)" data-message="Halo%2C%20saya%20ingin%20order%20paket%20Rp7.000%20dengan%20FOTO%20pada%20ulasan%20GMAPS">
+        <i class="fas fa-shopping-cart"></i> Order
+      </button>
+    </div>
+  </div>
+
+  <!-- GARANSI & INFO SINGKAT (tanpa tombol kontak) -->
+  <div style="background: rgba(8, 12, 28, 0.5); backdrop-filter: blur(12px); border-radius: 1rem; padding: 0.8rem; margin: 0.5rem 0; text-align: center;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;">
+      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-star"></i> Bintang 5 Terjamin</span>
+      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-user-astronaut"></i> Real Akun</span>
+      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-image"></i> Foto Ulasan</span>
+      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-bolt"></i> Cepat & Aman</span>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <i class="far fa-copyright"></i> 2026 • Jasa Review Google Maps Premium
+  </div>
+</div>
+
+<!-- MODAL POPUP PILIH KONTAK (WhatsApp / Telegram) -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-container">
+    <div class="modal-title"><i class="fas fa-comment-dots"></i> Pilih Kontak</div>
+    <div class="modal-sub" id="modalPaketInfo">Pilih platform untuk melanjutkan order</div>
+    <div class="modal-buttons">
+      <button class="modal-wa" id="modalWaBtn">
+        <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+      </button>
+      <button class="modal-tele" id="modalTeleBtn">
+        <i class="fab fa-telegram-plane fa-lg"></i> Telegram
+      </button>
+    </div>
+    <button class="modal-close" id="modalCloseBtn">Batal</button>
+  </div>
+</div>
+
+<script>
+  // Bintang background
+  function createStars() {
+    const starsDiv = document.getElementById('starsContainer');
+    const starCount = 120;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      const size = Math.random() * 2.2 + 0.8;
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDuration = `${Math.random() * 2.5 + 1.5}s`;
+      star.style.animationDelay = `${Math.random() * 2}s`;
+      star.style.opacity = Math.random() * 0.7 + 0.2;
+      starsDiv.appendChild(star);
+    }
+  }
+  createStars();
+
+  // Toast notification - bentuk memanjang
+  let activeToast = null;
+  function showToast(msg, icon = 'fas fa-info-circle') {
+    if (activeToast && activeToast.parentNode) {
+      activeToast.classList.remove('show');
+      setTimeout(() => {
+        if (activeToast && activeToast.parentNode) activeToast.remove();
+      }, 200);
+    }
+    
+    const toast = document.createElement('div');
+    toast.className = 'toast-notif';
+    toast.innerHTML = `
+      <i class="${icon}"></i>
+      <span class="toast-text">${msg}</span>
+      <button class="close-toast"><i class="fas fa-times"></i></button>
+    `;
+    document.body.appendChild(toast);
+    activeToast = toast;
+    
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    const closeBtn = toast.querySelector('.close-toast');
+    closeBtn.addEventListener('click', () => {
+      toast.classList.remove('show');
+      setTimeout(() => {
+        if (toast && toast.parentNode) toast.remove();
+        if (activeToast === toast) activeToast = null;
+      }, 300);
+    });
+    
+    setTimeout(() => {
+      if (toast && toast.parentNode) {
+        toast.classList.remove('show');
+        setTimeout(() => {
+          if (toast && toast.parentNode) toast.remove();
+          if (activeToast === toast) activeToast = null;
+        }, 300);
+      }
+    }, 3500);
+  }
+
+  // Data order sementara
+  let pendingOrder = {
+    paket: null,
+    message: null
+  };
+
+  const modal = document.getElementById('contactModal');
+  const modalPaketInfo = document.getElementById('modalPaketInfo');
+  const modalWaBtn = document.getElementById('modalWaBtn');
+  const modalTeleBtn = document.getElementById('modalTeleBtn');
+  const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+  function openModal(paketName, prefilledMsg) {
+    pendingOrder.paket = paketName;
+    pendingOrder.message = prefilledMsg;
+    modalPaketInfo.innerHTML = `📦 ${paketName}<br>Pilih platform untuk melanjutkan`;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function redirectToWhatsApp() {
+    if (pendingOrder.message) {
+      const waUrl = `https://wa.me/628815042954?text=${pendingOrder.message}`;
+      window.open(waUrl, '_blank');
+      showToast('📱 Membuka WhatsApp dengan pesan paket', 'fab fa-whatsapp');
+    } else {
+      const waUrl = 'https://wa.me/628815042954?text=Halo%20tim%20Nebula%2C%20saya%20tertarik%20dengan%20jasa%20review%20GMAPS';
+      window.open(waUrl, '_blank');
+      showToast('📱 Silakan kirim pesan order', 'fab fa-whatsapp');
+    }
+    resetPendingOrder();
+    closeModal();
+  }
+
+  function redirectToTelegram() {
+    window.open('https://t.me/DansXCode', '_blank');
+    showToast('📨 Membuka Telegram @DansXCode', 'fab fa-telegram-plane');
+    resetPendingOrder();
+    closeModal();
+  }
+
+  function resetPendingOrder() {
+    pendingOrder.paket = null;
+    pendingOrder.message = null;
+  }
+
+  // Binding tombol Order
+  function bindOrderButtons() {
+    const orderBtns = document.querySelectorAll('.order-btn');
+    orderBtns.forEach(btn => {
+      const newBtn = btn.cloneNode(true);
+      btn.parentNode.replaceChild(newBtn, btn);
+      
+      newBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const paket = newBtn.getAttribute('data-paket') || 'Paket Review';
+        const message = newBtn.getAttribute('data-message') || 'Halo%2C%20saya%20ingin%20order%20review%20GMAPS';
+        openModal(paket, message);
+      });
+    });
+  }
+
+  modalWaBtn.addEventListener('click', redirectToWhatsApp);
+  modalTeleBtn.addEventListener('click', redirectToTelegram);
+  modalCloseBtn.addEventListener('click', closeModal);
+  
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  bindOrderButtons();
+
+  // Haptic feedback untuk HP
+  function vibrateLight() {
+    if (window.navigator && window.navigator.vibrate) {
+      window.navigator.vibrate(30);
+    }
+  }
+  
+  const allClickable = document.querySelectorAll('.order-btn, .modal-wa, .modal-tele, .modal-close');
+  allClickable.forEach(el => {
+    el.addEventListener('click', () => vibrateLight());
+  });
+</script>
+</body>
+</html>
