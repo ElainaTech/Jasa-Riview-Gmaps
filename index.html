@@ -1,639 +1,618 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <title>D4 Review | Jasa Google Maps Premium</title>
-  <!-- Google Fonts & Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>RamSha Review Boost | Jasa Buzzer Google Maps Resmi</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(rgba(5, 3, 20, 0.82), rgba(2, 1, 12, 0.88)), 
-                  url('https://cdn.phototourl.com/free/2026-04-19-f4e1402b-bf9d-4991-8989-8df89f4ddef0.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #edefff;
-      min-height: 100vh;
-      padding: 0 0 20px 0;
-    }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #202124;
+            scroll-behavior: smooth;
+        }
 
-    .nebula-glow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 20% 30%, rgba(110, 70, 210, 0.15) 0%, rgba(0, 0, 0, 0) 60%),
-                  radial-gradient(circle at 80% 70%, rgba(70, 40, 170, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
-      pointer-events: none;
-      z-index: 0;
-    }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    .stars {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      animation: blink 2.5s infinite alternate;
-    }
-    @keyframes blink {
-      0% { opacity: 0.2; transform: scale(0.8);}
-      100% { opacity: 1; transform: scale(1.2);}
-    }
+        /* Navbar - Logo + Chat (WhatsApp langsung) */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid #e8eaed;
+        }
 
-    .container {
-      position: relative;
-      z-index: 2;
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 1.2rem 1rem 2rem;
-    }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-    .hero {
-      text-align: center;
-      margin-bottom: 1.8rem;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(20, 15, 45, 0.7);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(140, 100, 255, 0.5);
-      border-radius: 60px;
-      padding: 0.3rem 1rem;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: #c6bdff;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      background: linear-gradient(125deg, #FFFFFF, #c7b4ff, #9d6eff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      margin-bottom: 0.4rem;
-      letter-spacing: -0.5px;
-    }
-    h1 span {
-      font-size: 1rem;
-      display: block;
-      background: none;
-      -webkit-background-clip: unset;
-      color: #b9b2ff;
-      margin-top: 4px;
-    }
-    .subhead {
-      font-size: 0.8rem;
-      background: rgba(0, 0, 0, 0.45);
-      backdrop-filter: blur(4px);
-      display: inline-block;
-      padding: 0.3rem 1rem;
-      border-radius: 30px;
-    }
+        /* Gaya logo gambar baru */
+        .logo-icon-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(124,58,237,0.2);
+            background: #ffffff;
+        }
 
-    /* PRICE LIST */
-    .price-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 1.5rem 0 1.8rem;
-    }
-    .price-card {
-      background: rgba(8, 12, 28, 0.7);
-      backdrop-filter: blur(16px);
-      border-radius: 1.5rem;
-      border: 1px solid rgba(110, 80, 220, 0.5);
-      padding: 1.2rem;
-      transition: all 0.2s ease;
-    }
-    .price-card:active {
-      transform: scale(0.99);
-    }
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      margin-bottom: 0.8rem;
-    }
-    .price-nominal {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: white;
-    }
-    .price-nominal small {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #bcb3ff;
-    }
-    .package-name {
-      font-weight: 700;
-      background: linear-gradient(120deg, #ddd6ff, #bb9eff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      font-size: 0.9rem;
-    }
-    .benefits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 0.8rem 0;
-    }
-    .benefit-tag {
-      background: rgba(100, 70, 200, 0.25);
-      border-radius: 40px;
-      padding: 0.25rem 0.7rem;
-      font-size: 0.7rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      color: #e0d6ff;
-    }
-    .benefit-tag i {
-      font-size: 0.65rem;
-      color: #a986ff;
-    }
-    .btn-order {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: linear-gradient(95deg, #5f3dc9, #3b1e8a);
-      border: none;
-      border-radius: 60px;
-      padding: 0.7rem;
-      width: 100%;
-      font-weight: 700;
-      font-size: 0.85rem;
-      color: white;
-      cursor: pointer;
-      transition: 0.2s;
-      margin-top: 0.5rem;
-    }
-    .btn-order:active {
-      transform: scale(0.97);
-    }
+        .google-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .google-blue { color: #4285F4; }
+        .google-red { color: #EA4335; }
+        .google-yellow { color: #FBBC05; }
+        .google-green { color: #34A853; }
 
-    /* MODAL POPUP PILIH KONTAK */
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(12px);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s ease;
-    }
-    .modal-overlay.active {
-      visibility: visible;
-      opacity: 1;
-    }
-    .modal-container {
-      background: linear-gradient(145deg, #11162b, #0a0d1f);
-      border-radius: 2rem;
-      border: 1px solid rgba(155, 110, 255, 0.5);
-      padding: 1.5rem;
-      width: 85%;
-      max-width: 340px;
-      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
-      transform: scale(0.9);
-      transition: transform 0.25s ease;
-    }
-    .modal-overlay.active .modal-container {
-      transform: scale(1);
-    }
-    .modal-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(120deg, #fff, #c5adff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    .modal-sub {
-      text-align: center;
-      font-size: 0.75rem;
-      color: #a59ed6;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px dashed rgba(155, 110, 255, 0.3);
-    }
-    .modal-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-    .modal-wa, .modal-tele {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 0.9rem;
-      border-radius: 60px;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: 0.2s;
-      cursor: pointer;
-      border: 1px solid;
-    }
-    .modal-wa {
-      background: #075E5415;
-      border-color: #25D366;
-      color: #e0ffef;
-    }
-    .modal-wa:active {
-      background: #25D366;
-      color: #111;
-      transform: scale(0.97);
-    }
-    .modal-tele {
-      background: #1f8bcb15;
-      border-color: #26A5E4;
-      color: #daf5ff;
-    }
-    .modal-tele:active {
-      background: #26A5E4;
-      color: #0a1c2a;
-      transform: scale(0.97);
-    }
-    .modal-close {
-      background: rgba(255,255,255,0.08);
-      border: none;
-      border-radius: 40px;
-      padding: 0.6rem;
-      margin-top: 0.8rem;
-      font-size: 0.75rem;
-      color: #b5adf0;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    .modal-close:active {
-      background: rgba(255,255,255,0.15);
-    }
+        .logo-text h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #202124;
+        }
 
-    /* TOAST NOTIFICATION - MEMANJANG RECTANGULAR */
-    .toast-notif {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%) translateY(100px);
-      background: linear-gradient(135deg, #1a1a2ecc, #0f0f23cc);
-      backdrop-filter: blur(20px);
-      border-left: 4px solid #9f7eff;
-      border-right: 1px solid rgba(155, 110, 255, 0.3);
-      border-top: 1px solid rgba(155, 110, 255, 0.3);
-      border-bottom: 1px solid rgba(155, 110, 255, 0.3);
-      border-radius: 12px;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      z-index: 1100;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(155, 110, 255, 0.2);
-      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      font-weight: 500;
-      font-size: 0.85rem;
-      color: #f0eaff;
-      min-width: 260px;
-      max-width: 90%;
-      width: auto;
-      letter-spacing: 0.2px;
-    }
-    .toast-notif.show {
-      transform: translateX(-50%) translateY(0);
-    }
-    .toast-notif i {
-      font-size: 1.2rem;
-      color: #9f7eff;
-      flex-shrink: 0;
-    }
-    .toast-notif .toast-text {
-      flex: 1;
-      line-height: 1.4;
-      word-break: break-word;
-    }
-    .toast-notif .close-toast {
-      background: rgba(255,255,255,0.1);
-      border: none;
-      border-radius: 8px;
-      width: 26px;
-      height: 26px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 11px;
-      margin-left: 8px;
-      transition: 0.2s;
-      flex-shrink: 0;
-    }
-    .toast-notif .close-toast:hover {
-      background: rgba(255,255,255,0.25);
-    }
-    .toast-notif .close-toast:active {
-      transform: scale(0.95);
-    }
+        .logo-text h1 span {
+            color: #7c3aed;
+        }
 
-    .copyright {
-      text-align: center;
-      font-size: 0.65rem;
-      color: #6b65a0;
-      margin-top: 1.5rem;
-      padding-top: 0.8rem;
-      border-top: 1px solid rgba(100, 80, 170, 0.3);
-    }
+        .logo-text p {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #5f6368;
+        }
 
-    @media (max-width: 480px) {
-      .container { padding: 1rem 0.9rem 1.5rem; }
-      h1 { font-size: 1.9rem; }
-      .price-nominal { font-size: 1.6rem; }
-      .toast-notif { padding: 12px 16px; font-size: 0.8rem; min-width: 240px; }
-    }
-  </style>
+        .btn-chat {
+            background: #34a853;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            box-shadow: 0 2px 6px rgba(52,168,83,0.2);
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-chat:hover {
+            background: #2c8e47;
+            transform: scale(1.02);
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            padding: 4rem 0 3rem;
+        }
+
+        .hero-left {
+            flex: 1.2;
+        }
+
+        .hero-badge {
+            background: #ede9fe;
+            color: #7c3aed;
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-left h2 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #202124;
+        }
+
+        .gradient-text {
+            color: #7c3aed;
+        }
+
+        .hero-left p {
+            font-size: 1.05rem;
+            color: #5f6368;
+            margin-bottom: 2rem;
+            max-width: 90%;
+            line-height: 1.5;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .stat {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #202124;
+        }
+
+        .hero-right {
+            flex: 1;
+            background: #f8f9fa;
+            border-radius: 24px;
+            padding: 1.5rem;
+            border: 1px solid #e8eaed;
+        }
+
+        .map-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #e8eaed;
+        }
+
+        .google-maps-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ede9fe;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #5b21b6;
+        }
+
+        .review-bubble {
+            background: white;
+            border-radius: 16px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #e8eaed;
+        }
+
+        /* Pricing */
+        .pricing-section {
+            margin: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #202124;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: #5f6368;
+            margin-bottom: 3rem;
+        }
+
+        .pricing-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem 1.8rem;
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #e8eaed;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+            border-color: #7c3aed;
+        }
+
+        .popular {
+            border-top: 4px solid #34a853;
+            position: relative;
+        }
+
+        .popular-badge {
+            background: #34a853;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 40px;
+            position: absolute;
+            top: -12px;
+            right: 24px;
+        }
+
+        .price-header h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #202124;
+            margin: 1rem 0 0.2rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #5f6368;
+        }
+
+        .price-desc {
+            color: #5f6368;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #e8eaed;
+            padding-bottom: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #202124;
+        }
+
+        .feature-list i {
+            color: #34a853;
+            width: 20px;
+        }
+
+        .btn-order {
+            display: block;
+            text-align: center;
+            background: #f8f9fa;
+            color: #7c3aed;
+            font-weight: 600;
+            padding: 12px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 2rem;
+            border: 1px solid #e8eaed;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-order:hover {
+            background: #7c3aed;
+            color: white;
+            border-color: #7c3aed;
+        }
+
+        .btn-order-pro {
+            background: #7c3aed;
+            color: white;
+            border: none;
+        }
+
+        .btn-order-pro:hover {
+            background: #6d28d9;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .feature-item {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 1.8rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #e8eaed;
+            transition: 0.2s;
+        }
+
+        .feature-item:hover {
+            border-color: #7c3aed;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            background: white;
+            padding: 12px;
+            border-radius: 60px;
+            color: #7c3aed;
+            margin-bottom: 1rem;
+            display: inline-block;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* CTA */
+        .cta-modern {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            color: white;
+            margin: 3rem 0;
+        }
+
+        .cta-modern button {
+            background: #ffffff;
+            color: #7c3aed;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 700;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.2s;
+        }
+
+        .cta-modern button:hover {
+            transform: scale(1.02);
+            background: #f8f9fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #e8eaed;
+            margin-top: 3rem;
+            color: #5f6368;
+            font-size: 0.85rem;
+        }
+
+        /* tombol hero link ungu */
+        .hero-link {
+            background: #7c3aed;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .hero-link:hover {
+            background: #6d28d9;
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 780px) {
+            .container { padding: 0 1.2rem; }
+            .hero-left h2 { font-size: 2rem; }
+            .navbar { flex-direction: column; text-align: center; }
+            .btn-chat { margin-top: 0.5rem; }
+            .logo-icon-img { width: 42px; height: 42px; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="nebula-glow"></div>
-<div class="stars" id="starsContainer"></div>
-
 <div class="container">
-  <div class="hero">
-    <div class="badge">
-      <i class="fas fa-star-of-life"></i> GOOGLE MAPS REVIEWS
-    </div>
-    <h1>REVIEW GOOGLE MAPS<br><span>⚡ TRUST RIVIEW ⚡</span></h1>
-    <div class="subhead">
-      <i class="fas fa-check-circle"></i> Bintang 5 • Real Akun • Cepat
-    </div>
-  </div>
-
-  <!-- DAFTAR HARGA -->
-  <div class="price-list">
-    <!-- Paket 1: Rp3.000 -->
-    <div class="price-card">
-      <div class="card-header">
-        <div class="price-nominal">Rp3.000 <small>/ review</small></div>
-        <div class="package-name"><i class="fas fa-gem"></i> Basic</div>
-      </div>
-      <div class="benefits">
-        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
-        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
-        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
-      </div>
-      <button class="btn-order order-btn" data-paket="Basic (Rp3.000)" data-message="Halo%2C%20saya%20pesan%20Paket%20Rp3.000%20(Review%20GMAPS%20Bintang5%2C%20Akun%20Berkualitas)">
-        <i class="fas fa-shopping-cart"></i> Order
-      </button>
+    <!-- Navbar: Logo Gambar + Nama Brand, Chat WA -->
+    <div class="navbar">
+        <div class="logo">
+            <!-- LOGO BARU dari link https://files.catbox.moe/q1cgi3.png -->
+            <img src="https://files.catbox.moe/q1cgi3.png" alt="RamSha Logo" class="logo-icon-img">
+            <div class="logo-text">
+                <h1>RamSha<span>Review</span>Boost</h1>
+                <p>Powered by 
+                    <span class="google-logo">
+                        <span class="google-blue">G</span>
+                        <span class="google-red">o</span>
+                        <span class="google-yellow">o</span>
+                        <span class="google-blue">g</span>
+                        <span class="google-green">l</span>
+                        <span class="google-red">e</span>
+                    </span>
+                    Maps
+                </p>
+            </div>
+        </div>
+        <!-- Tombol chat sales => buka WhatsApp langsung ke 628815042954 -->
+        <a href="https://wa.me/628815042954?text=Halo%20tim%20RamSha%2C%20saya%20tertarik%20dengan%20jasa%20buzzer%20review%20Google%20Maps.%20Mohon%20info%20paket%20dan%20harganya." class="btn-chat" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> Chat Sales
+        </a>
     </div>
 
-    <!-- Paket 2: Rp4.000 -->
-    <div class="price-card">
-      <div class="card-header">
-        <div class="price-nominal">Rp4.000 <small>/ review</small></div>
-        <div class="package-name"><i class="fas fa-star"></i> Pro</div>
-      </div>
-      <div class="benefits">
-        <span class="benefit-tag"><i class="fas fa-comment-dots"></i> ULASAN BERKUALITAS</span>
-        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
-        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
-        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
-      </div>
-      <button class="btn-order order-btn" data-paket="Pro (Rp4.000)" data-message="Saya%20pesan%20paket%20Rp4.000%20(ulasan%20berkualitas%2C%20bintang5%20GMAPS)">
-        <i class="fas fa-shopping-cart"></i> Order
-      </button>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fab fa-google"></i> <i class="fas fa-map-marker-alt"></i> Official Google Maps Partner
+            </div>
+            <h2>Ledakan <span class="gradient-text">⭐ 5.0</span> untuk Bisnis Anda di <br>Google Maps</h2>
+            <p>Jasa review premium dengan akun real, teks natural, dan aman dari kebijakan Google.</p>
+            <div class="hero-stats">
+                <div class="stat"><i class="fas fa-store"></i> 1.200+ bisnis</div>
+                <div class="stat"><i class="fas fa-star"></i> 12.000+ review 5⭐</div>
+                <div class="stat"><i class="fas fa-shield-alt"></i> 100% real account</div>
+            </div>
+            <a href="#paket" class="hero-link">Lihat Paket ↓</a>
+        </div>
+        <div class="hero-right">
+            <div class="map-card-header">
+                <div class="google-maps-badge">
+                    <i class="fab fa-google" style="color:#7c3aed;"></i>
+                    <i class="fas fa-map-marker-alt" style="color:#7c3aed;"></i>
+                    <strong>Google Maps</strong>
+                </div>
+                <span style="color:#FBBC05;">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="review-bubble">
+                <i class="fas fa-user-circle"></i> <strong>RamSha</strong> 
+                <span style="color:#FBBC05;">⭐⭐⭐⭐⭐</span><br>
+                “Pelayanan cepat, review langsung muncul. Makasih RamSha!”
+            </div>
+            <div class="review-bubble">
+                <i class="fas fa-user-circle"></i> <strong>RamSha V2</strong> 
+                <span style="color:#FBBC05;">⭐⭐⭐⭐⭐</span><br>
+                “Rating toko saya naik drastis dalam 2 hari. Recommended!”
+            </div>
+            <div style="margin-top: 12px; text-align: center; font-size: 0.7rem; color: #5f6368;">
+                <i class="fab fa-google"></i> 1,248 ulasan • 4.9 rata-rata
+            </div>
+        </div>
     </div>
 
-    <!-- Paket 3: Rp7.000 -->
-    <div class="price-card">
-      <div class="card-header">
-        <div class="price-nominal">Rp7.000 <small>/ review</small></div>
-        <div class="package-name"><i class="fas fa-camera-retro"></i> Premium </div>
-      </div>
-      <div class="benefits">
-        <span class="benefit-tag"><i class="fas fa-comment-dots"></i> ULASAN BERKUALITAS</span>
-        <span class="benefit-tag"><i class="fas fa-image"></i> FOTO PADA ULASAN</span>
-        <span class="benefit-tag"><i class="fas fa-star"></i> BINTANG 5</span>
-        <span class="benefit-tag"><i class="fas fa-user-check"></i> AKUN BERKUALITAS</span>
-        <span class="benefit-tag"><i class="fas fa-bolt"></i> PENGERJAAN CEPAT</span>
-      </div>
-      <button class="btn-order order-btn" data-paket="Premium (Rp7.000)" data-message="Halo%2C%20saya%20ingin%20order%20paket%20Rp7.000%20dengan%20FOTO%20pada%20ulasan%20GMAPS">
-        <i class="fas fa-shopping-cart"></i> Order
-      </button>
-    </div>
-  </div>
+    <!-- PAKET LAYANAN -->
+    <div class="pricing-section" id="paket">
+        <div class="section-title">🚀 Pilih Paket Buzzer Review</div>
+        <div class="section-sub">
+            <span class="google-logo">
+                <span class="google-blue">G</span><span class="google-red">o</span><span class="google-yellow">o</span><span class="google-blue">g</span><span class="google-green">l</span><span class="google-red">e</span>
+            </span> Akun asli + 5 Bintang + Kualitas tinggi
+        </div>
+        <div class="pricing-grid">
+            <!-- BASIC -->
+            <div class="price-card">
+                <div class="price-header">
+                    <h3>Basic</h3>
+                    <div class="price">Rp3.000 <span>/ review</span></div>
+                    <div class="price-desc">Mulai 5 review / order</div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> ⭐ 5 Star Rating</li>
+                    <li><i class="fas fa-check-circle"></i> 👤 Real Account (bukan bot)</li>
+                    <li><i class="fas fa-check-circle"></i> 🛡️ High Quality & Aman</li>
+                    <li><i class="fas fa-check-circle"></i> 📍 Google Maps Terverifikasi</li>
+                    <li><i class="fas fa-clock"></i> Pengerjaan 1x24 jam</li>
+                </ul>
+                <!-- Tombol Basic → WA -->
+                <a href="https://wa.me/628815042954?text=Halo%20RamSha%2C%20saya%20tertarik%20paket%20Basic%20(Rp3.000%2Freview)%20untuk%20review%20Google%20Maps.%20Mohon%20bantuannya." class="btn-order" target="_blank" rel="noopener noreferrer">Pesan Basic →</a>
+            </div>
 
-  <!-- GARANSI & INFO SINGKAT (tanpa tombol kontak) -->
-  <div style="background: rgba(8, 12, 28, 0.5); backdrop-filter: blur(12px); border-radius: 1rem; padding: 0.8rem; margin: 0.5rem 0; text-align: center;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;">
-      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-star"></i> Bintang 5 Terjamin</span>
-      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-user-astronaut"></i> Real Akun</span>
-      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-image"></i> Foto Ulasan</span>
-      <span style="background: #00000030; padding: 0.2rem 0.6rem; border-radius: 40px; font-size: 0.65rem;"><i class="fas fa-bolt"></i> Cepat & Aman</span>
-    </div>
-  </div>
+            <!-- PRO -->
+            <div class="price-card popular">
+                <div class="popular-badge"><i class="fas fa-fire"></i> Best Seller</div>
+                <div class="price-header">
+                    <h3>Pro <span style="font-size:0.8rem;">⭐ Premium</span></h3>
+                    <div class="price">Rp5.000 <span>/ review</span></div>
+                    <div class="price-desc">Minimal 5 review, lebih personal</div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> ⭐ 5 Star Rating</li>
+                    <li><i class="fas fa-check-circle"></i> 📝 Teks Review panjang & variatif</li>
+                    <li><i class="fas fa-check-circle"></i> 👤 Real Account + Foto Profile</li>
+                    <li><i class="fas fa-check-circle"></i> 🛡️ High Quality, Anti Spam</li>
+                    <li><i class="fas fa-chart-line"></i> Prioritas eksekusi 6-12 jam</li>
+                </ul>
+                <a href="https://wa.me/628815042954?text=Saya%20ingin%20order%20paket%20PRO%20Google%20Maps%20Review%20(Rp5.000%2Freview)%20dari%20RamSha.%20Tolong%20info%20lebih%20lanjut." class="btn-order btn-order-pro" target="_blank" rel="noopener noreferrer">Pilih Pro <i class="fab fa-whatsapp"></i></a>
+            </div>
 
-  <div class="copyright">
-    <i class="far fa-copyright"></i> 2026 • Jasa Review Google Maps Premium
-  </div>
-</div>
-
-<!-- MODAL POPUP PILIH KONTAK (WhatsApp / Telegram) -->
-<div class="modal-overlay" id="contactModal">
-  <div class="modal-container">
-    <div class="modal-title"><i class="fas fa-comment-dots"></i> Pilih Kontak</div>
-    <div class="modal-sub" id="modalPaketInfo">Pilih platform untuk melanjutkan order</div>
-    <div class="modal-buttons">
-      <button class="modal-wa" id="modalWaBtn">
-        <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
-      </button>
-      <button class="modal-tele" id="modalTeleBtn">
-        <i class="fab fa-telegram-plane fa-lg"></i> Telegram
-      </button>
+            <!-- ENTERPRISE -->
+            <div class="price-card">
+                <div class="price-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom <span>/ bulan</span></div>
+                    <div class="price-desc">Bulk & manajemen review</div>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> 100+ review / bulan</li>
+                    <li><i class="fas fa-check-circle"></i> Dashboard realtime rating</li>
+                    <li><i class="fas fa-check-circle"></i> Balas otomatis ulasan negatif</li>
+                    <li><i class="fas fa-handshake"></i> Konsultasi prioritas</li>
+                </ul>
+                <a href="https://wa.me/628815042954?text=Halo%2C%20saya%20tertarik%20paket%20Enterprise%20RamSha%20Review%20Boost.%20Minta%20penawaran%20custom%20untuk%20bisnis%20saya." class="btn-order" target="_blank" rel="noopener noreferrer">Hubungi Kami →</a>
+            </div>
+        </div>
     </div>
-    <button class="modal-close" id="modalCloseBtn">Batal</button>
-  </div>
+
+    <!-- Keunggulan -->
+    <div class="feature-grid">
+        <div class="feature-item">
+            <i class="fab fa-google"></i>
+            <h3>Real Account</h3>
+            <p>Reviewer dengan akun Google asli & histori aman.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-star-half-alt" style="color:#FBBC05;"></i>
+            <h3>5 Stars + Teks</h3>
+            <p>Paket Pro dengan review panjang natural seperti pelanggan sungguhan.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-chart-line"></i>
+            <h3>Fast Index</h3>
+            <p>Review langsung muncul di Google Maps & tingkatkan kepercayaan.</p>
+        </div>
+    </div>
+
+    <!-- CTA Modern dengan WhatsApp -->
+    <div class="cta-modern">
+        <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;">
+            <i class="fab fa-google" style="font-size: 2rem;"></i>
+            <i class="fas fa-map-marker-alt" style="font-size: 2rem;"></i>
+        </div>
+        <h3>Butuh review 5 bintang massal?</h3>
+        <p style="margin-top: 8px; opacity: 0.9;">Harga mulai Rp3.000 / review. Real akun + high quality.</p>
+        <button onclick="window.open('https://wa.me/628815042954?text=Halo%20RamSha%2C%20saya%20butuh%20konsultasi%20review%20Google%20Maps%20untuk%20bisnis%20saya.%20Tolong%20bantuannya.','_blank')"><i class="fab fa-whatsapp"></i> Konsultasi Sekarang</button>
+    </div>
+
+    <footer>
+        <p>© 2026 RamSha Group — Layanan buzzer Google Maps</p>
+        <p>
+            <i class="fab fa-google" style="color:#7c3aed;"></i>
+            <i class="fab fa-instagram"></i> 
+            <i class="fab fa-twitter"></i> 
+            <i class="fab fa-tiktok"></i> 
+            @ramshagroup
+        </p>
+        <p style="font-size: 0.7rem;">⭐ 5 Star | Real Account | High Quality | Aman & Profesional</p>
+    </footer>
 </div>
 
 <script>
-  // Bintang background
-  function createStars() {
-    const starsDiv = document.getElementById('starsContainer');
-    const starCount = 120;
-    for (let i = 0; i < starCount; i++) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      const size = Math.random() * 2.2 + 0.8;
-      star.style.width = `${size}px`;
-      star.style.height = `${size}px`;
-      star.style.left = `${Math.random() * 100}%`;
-      star.style.top = `${Math.random() * 100}%`;
-      star.style.animationDuration = `${Math.random() * 2.5 + 1.5}s`;
-      star.style.animationDelay = `${Math.random() * 2}s`;
-      star.style.opacity = Math.random() * 0.7 + 0.2;
-      starsDiv.appendChild(star);
-    }
-  }
-  createStars();
-
-  // Toast notification - bentuk memanjang
-  let activeToast = null;
-  function showToast(msg, icon = 'fas fa-info-circle') {
-    if (activeToast && activeToast.parentNode) {
-      activeToast.classList.remove('show');
-      setTimeout(() => {
-        if (activeToast && activeToast.parentNode) activeToast.remove();
-      }, 200);
-    }
-    
-    const toast = document.createElement('div');
-    toast.className = 'toast-notif';
-    toast.innerHTML = `
-      <i class="${icon}"></i>
-      <span class="toast-text">${msg}</span>
-      <button class="close-toast"><i class="fas fa-times"></i></button>
-    `;
-    document.body.appendChild(toast);
-    activeToast = toast;
-    
-    setTimeout(() => toast.classList.add('show'), 10);
-    
-    const closeBtn = toast.querySelector('.close-toast');
-    closeBtn.addEventListener('click', () => {
-      toast.classList.remove('show');
-      setTimeout(() => {
-        if (toast && toast.parentNode) toast.remove();
-        if (activeToast === toast) activeToast = null;
-      }, 300);
-    });
-    
-    setTimeout(() => {
-      if (toast && toast.parentNode) {
-        toast.classList.remove('show');
-        setTimeout(() => {
-          if (toast && toast.parentNode) toast.remove();
-          if (activeToast === toast) activeToast = null;
-        }, 300);
-      }
-    }, 3500);
-  }
-
-  // Data order sementara
-  let pendingOrder = {
-    paket: null,
-    message: null
-  };
-
-  const modal = document.getElementById('contactModal');
-  const modalPaketInfo = document.getElementById('modalPaketInfo');
-  const modalWaBtn = document.getElementById('modalWaBtn');
-  const modalTeleBtn = document.getElementById('modalTeleBtn');
-  const modalCloseBtn = document.getElementById('modalCloseBtn');
-
-  function openModal(paketName, prefilledMsg) {
-    pendingOrder.paket = paketName;
-    pendingOrder.message = prefilledMsg;
-    modalPaketInfo.innerHTML = `📦 ${paketName}<br>Pilih platform untuk melanjutkan`;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  function redirectToWhatsApp() {
-    if (pendingOrder.message) {
-      const waUrl = `https://wa.me/628815042954?text=${pendingOrder.message}`;
-      window.open(waUrl, '_blank');
-      showToast('📱 Membuka WhatsApp dengan pesan paket', 'fab fa-whatsapp');
-    } else {
-      const waUrl = 'https://wa.me/628815042954?text=Halo%20tim%20Nebula%2C%20saya%20tertarik%20dengan%20jasa%20review%20GMAPS';
-      window.open(waUrl, '_blank');
-      showToast('📱 Silakan kirim pesan order', 'fab fa-whatsapp');
-    }
-    resetPendingOrder();
-    closeModal();
-  }
-
-  function redirectToTelegram() {
-    window.open('https://t.me/DansXCode', '_blank');
-    showToast('📨 Membuka Telegram @DansXCode', 'fab fa-telegram-plane');
-    resetPendingOrder();
-    closeModal();
-  }
-
-  function resetPendingOrder() {
-    pendingOrder.paket = null;
-    pendingOrder.message = null;
-  }
-
-  // Binding tombol Order
-  function bindOrderButtons() {
-    const orderBtns = document.querySelectorAll('.order-btn');
-    orderBtns.forEach(btn => {
-      const newBtn = btn.cloneNode(true);
-      btn.parentNode.replaceChild(newBtn, btn);
-      
-      newBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const paket = newBtn.getAttribute('data-paket') || 'Paket Review';
-        const message = newBtn.getAttribute('data-message') || 'Halo%2C%20saya%20ingin%20order%20review%20GMAPS';
-        openModal(paket, message);
-      });
-    });
-  }
-
-  modalWaBtn.addEventListener('click', redirectToWhatsApp);
-  modalTeleBtn.addEventListener('click', redirectToTelegram);
-  modalCloseBtn.addEventListener('click', closeModal);
-  
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  bindOrderButtons();
-
-  // Haptic feedback untuk HP
-  function vibrateLight() {
-    if (window.navigator && window.navigator.vibrate) {
-      window.navigator.vibrate(30);
-    }
-  }
-  
-  const allClickable = document.querySelectorAll('.order-btn, .modal-wa, .modal-tele, .modal-close');
-  allClickable.forEach(el => {
-    el.addEventListener('click', () => vibrateLight());
-  });
+    // Memastikan seluruh tombol order & chat WA mengarah ke nomor 628815042954
+    console.log("RamSha Review Boost - Ungu Modern + Logo Image | WA 628815042954");
 </script>
 </body>
 </html>
